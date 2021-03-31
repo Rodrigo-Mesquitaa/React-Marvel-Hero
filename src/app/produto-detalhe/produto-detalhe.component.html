@@ -1,0 +1,20 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title><h2>{{produto.nome_produto}}</h2></mat-card-title>
+        <mata-card-subtitle>{{produto.desc_produto}}</mata-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+    </mat-card-content>
+    <dl>
+        <dt>Preço</dt>
+        <dd>{{produto.preco_produto | currency:'BRL'}}</dd>
+        <dt>Atualizado em:</dt>
+        <dd>{{produto.dt_atualizacao | date: 'dd/MM/yyyy'}}</dd>
+    </dl>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-flat-button color="primary" class="teste" [routerLink]="['/produto-editar', produto._id]"><mat-icon>edit</mat-icon>Editar</button>
+        <button mat-flat-button color="warn" (click)="deleteProduto(produto._id)"><mat-icon>delete</mat-icon>Excluir</button> 
+       </mat-card-actions>
+</mat-card>
+</div>

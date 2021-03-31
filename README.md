@@ -1,2 +1,4 @@
-# React-Marvel-Hero
-Projeto React - API consumo Marvel heróis 
+# ProjetoCrudApp
+ Criando um app angular 7 e consumindo uma api rest
+
+ # Login: admin password: admin

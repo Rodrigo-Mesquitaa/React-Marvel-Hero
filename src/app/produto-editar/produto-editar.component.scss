@@ -1,0 +1,7 @@
+.example-contrainer {
+    display: flex;
+    flex-direction: column;
+}
+.example-contrainer > *{
+    width: 100%;
+}
